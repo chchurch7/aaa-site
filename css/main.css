@@ -416,6 +416,12 @@ footer .first {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .two.columns.link{
+        width: 100%;
+    }
+}
+
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
