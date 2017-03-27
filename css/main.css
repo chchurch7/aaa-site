@@ -94,37 +94,39 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.right-links li{
+.center-links {
+    text-align: center;
+}
+.center-links li{
     display: inline-block;
 }
 
-.left-links li {
-    display: inline-block;
-}
+
 
 .space-nav {
     padding-bottom: 50px;
     padding-top: 150px;
 }
 
-
-.space {
-    padding-bottom: 50px;
+.space-end {
+    padding-bottom: 150px;
     padding-top: 50px;
 }
-.break {
-    width: 44px;
-    height: 2px;
-    background: #000;
+
+.space {
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
  img {
     width: 100%;
  }
 
 .info {
-    padding-left: 5%;
     margin-top: 60px;
     margin-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .link {
@@ -153,6 +155,7 @@ a:hover {
 }
 nav li {
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 nav {
@@ -170,6 +173,10 @@ h2 {
     font-size: 28px;
     font-weight: 400;
     letter-spacing: 0;
+}
+
+h2:hover {
+    color: #bcbec0; 
 }
 
 h3 {
@@ -200,10 +207,6 @@ ul li {
 
 }
 
-.about .first {
-    border-top: 2px solid black;
-    padding-top: 96px;
-}
 
 .about h3 {
     padding-left: 0px;
@@ -233,7 +236,78 @@ footer .first {
     border-bottom: 10px solid black
 }
 
+.rockport .info {
+    padding-bottom: 50px;
+}
 
+.subrow {   
+    padding-bottom: 12px;
+}
+
+.mainrow {
+    padding-bottom: 12px;
+}
+ .row .images {
+    padding-bottom: 12px;
+ }
+
+img {
+    opacity:0;
+    -moz-transition: opacity 1s; /* Firefox 4 */
+    -webkit-transition: opacity 1s; /* Safari and Chrome */
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+ section.work.index img {
+    background-color: #fff;
+    -webkit-transition: opacity .5s; /* For Safari 3.1 to 6.0 */
+    transition: opacity .5s;
+ }
+
+section.work.index img:hover {
+    background-color: #fff;
+    opacity: .5
+ }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  color: #000;
+  font-size: 18px;
+  font-family: 'Inconsolata';
+  line-height: 24px;
+  padding-top: 16px;
+  padding-left: 16px;
+  text-transform: capitalize;
+}
+
+.overlay h2 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+      opacity: .75;
+}
+
+.next {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;   
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
